@@ -1,0 +1,75 @@
+:root {
+  font-size: 16px;
+  --background-color: #333940;
+  --text-highlight-color: #e667eb;
+  --gradient: linear-gradient(180deg, #6b4775 0%, #9d54a4 100%);
+  --border-radius: 5px;
+}
+body {
+  background-color: var(--background-color);
+  color: white;
+  text-align: center;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.page-header h1 {
+  color: var(--text-highlight-color);
+}
+.page-header .page-desc {
+  max-width: 900px;
+  margin: 20px auto;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  max-width: 350px;
+  border: 2px dashed white;
+  padding: 10px;
+  margin: 20px 10px;
+  position: relative;
+  text-align: left;
+}
+.card-header {
+  color: var(--text-highlight-color);
+  position: relative;
+  margin-top: -30px;
+  padding: 0 20px;
+  border: white 2px solid;
+  border-radius: 10px;
+  width: 80%;
+  background-color: var(--background-color);
+}
+
+.card-header h2 {
+  margin: 5px auto;
+}
+
+.card-desc {
+  margin: 25px 10px;
+  color: var(--text-highlight-color);
+}
+
+.card:hover,
+.card:hover .card-header {
+  border-color: var(--text-highlight-color);
+  box-shadow: 0 0 15px 2px var(--text-highlight-color);
+}
+
+pre {
+  width: 90%;
+  text-align: left;
+  white-space: pre-line;
+  padding: 10px;
+  background: var(--gradient);
+  border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 922px) {
+}
+
+@media screen and (max-width: 600px) {
+}
